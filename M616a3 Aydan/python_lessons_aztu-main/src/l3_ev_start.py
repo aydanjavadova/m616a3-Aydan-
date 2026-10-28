@@ -16,10 +16,33 @@ drops = [3, 0, 5, 1, 0, 2, 4]
 
 # 3) for + if: düşən zəng sayı 2-dən çox olan neçə gün var? (Kərpic 7)
 print("=== 3 ===")
+rsrp_list=[-91.5,-108.1,-86.2,-103.3,-110.4]
+weak=0
+for v in rsrp_list:
+    if v < -105:
+        print(v,"zeif")
+        weak= weak + 1
+    else:
+        print(v,"normal")
+        print("zeif ölçme sayı:",weak)
+      
 # TODO: bad_days = 0; for d in drops: ... ; print("Pis günlər:", bad_days)
 
 # 4) Lüğət: bir baza stansiyasının «pasportu» (Kərpic 6)
-print("=== 4 ===")
+print("===Kerpic 7===")
+eded=int(input("Eded daxil et:"))
+
+if eded < 10:
+    print("Menfidir ve 10 dan kiçikdir")
+elif eded >12 :
+    print("Cutdur ve 12 den boyukdur")
+
+elif eded<25:
+        print("25-den kiçikdir")
+else: 
+    print("Tekdir ve 50 den böyükdür")
+
+
 # TODO: cell = {"cell_id": ..., "region": ..., "band": ...}
 # TODO: region-u çap edin, band-ı dəyişin, bütün lüğəti çap edin
 
